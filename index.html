@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="date"></div>
+
+      <div class="col-2">
+        <h2>To Do Lists <i class="fas fa-check-circle"></i></h2>
+        <div>
+          <input type="text" id="input" placeholder="Enter your Lists" />
+          <a class="button" id="submit">
+            <i class="fas fa-plus-circle"></i> Submit</a
+          >
+        </div>
+      </div>
+
+      <!-- To do Lists -->
+      <ul id="list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

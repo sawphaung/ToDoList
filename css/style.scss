@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.05em;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #121212;
+  color: #fff;
+}
+
+.container {
+  width: 95%;
+  max-width: 600px;
+  margin: 5% auto;
+}
+
+#date {
+  font-size: 18px;
+  font-weight: bold;
+  height: 200px;
+  padding: 2%;
+  background: rgb(230, 106, 18) url("/img/main-bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.col-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #83473d;
+  padding: 20px 0;
+  margin: 1% auto;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+input {
+  border: 1px solid #fff;
+  height: 35px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  outline: none;
+}
+
+.button {
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  outline: none;
+  text-decoration: none;
+  min-height: 30px;
+  line-height: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #362c35;
+  }
+}
+
+#list {
+  padding: 20px 0;
+  background: #006737;
+
+  li {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1.5px dotted #fff;
+
+    span {
+      padding-left: 10px;
+    }
+
+    .delete {
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #5b241d;
+}
+
+#list .fa-check-circle {
+  color: #5b241d;
+}
